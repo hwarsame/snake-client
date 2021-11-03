@@ -10,7 +10,14 @@ const connect = function () {
     console.log('You have successfully connected to the server! :)')
     conn.write("Name: BIG");
   });
+  conn.on("connect", (data) =>{
+    // setTimeout(()=>{
+    //   conn.write('Move: up')
+    // }, 3000)
+    
+  })
   return conn;
 };
+
 
 module.exports = connect
