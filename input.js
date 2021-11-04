@@ -14,12 +14,16 @@ const setupInput = function(conn) {
       process.exit();
     } else if (key === 'w') {
       connection.write('Move: up');
+      conn.write('Say: Im lost pls help')
     } else if (key === 'a') {
       connection.write('Move: left');
+      conn.write('Say: Wow thanks 4 help')
     } else if (key === 's') {
       conn.write('Move: down');
+      conn.write('Say: WAIT! This no Help')
     } else if (key === 'd') {
       conn.write('Move: right');
+      conn.write('Say: NOOOOOOOOO HELP!')
     }
   };
 

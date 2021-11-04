@@ -9,7 +9,7 @@ const connect = function() {
   conn.setEncoding("utf8");
   conn.on("connect", () => {
     console.log('You have successfully connected to the server! :)');
-    conn.write("Name: BIG");
+    conn.write("Name: JOE");
   });
   conn.on("connect", (data) =>{
     // setTimeout(()=>{
